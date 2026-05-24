@@ -1,0 +1,123 @@
+.fields-display-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fields-display-container h3 {
+  color: #333;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.fields-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.field-item {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 8px;
+  padding: 15px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.field-item:hover {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  transform: translateY(-2px);
+}
+
+.field-label {
+  font-size: 0.85em;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.field-value {
+  font-size: 1.1em;
+  color: #222;
+  word-break: break-word;
+  font-weight: 500;
+}
+
+.field-confidence {
+  font-size: 0.8em;
+  color: #667eea;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.field-location {
+  font-size: 0.75em;
+  color: #999;
+  margin-top: 4px;
+}
+
+.no-fields {
+  background: #fef3cd;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #856404;
+}
+
+.raw-text-section {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  border-left: 4px solid #764ba2;
+}
+
+.raw-text-section h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+}
+
+.raw-text-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.5;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.document-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.info-badge {
+  background: #667eea;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.processing-time {
+  text-align: center;
+  color: #999;
+  font-size: 0.9em;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}

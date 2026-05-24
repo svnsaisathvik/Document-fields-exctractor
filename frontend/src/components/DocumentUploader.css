@@ -1,0 +1,100 @@
+.uploader-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.uploader-container h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.drag-drop-zone {
+  border: 2px dashed #667eea;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f8f9ff;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.drag-drop-zone:hover:not(.disabled) {
+  border-color: #764ba2;
+  background: #f0f1ff;
+  transform: translateY(-2px);
+}
+
+.drag-drop-zone.active {
+  border-color: #764ba2;
+  background: #e8ebff;
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
+}
+
+.drag-drop-zone.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.upload-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.drag-drop-zone h3 {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.drag-drop-zone p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.drag-drop-zone .file-types {
+  font-size: 0.9em;
+  color: #999;
+  margin-top: 10px;
+}
+
+.upload-tips {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+.upload-tips h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.upload-tips ul {
+  list-style: none;
+  color: #666;
+  font-size: 0.95em;
+  line-height: 1.8;
+}
+
+.upload-tips li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.upload-tips li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
